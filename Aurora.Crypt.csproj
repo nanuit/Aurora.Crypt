@@ -13,7 +13,8 @@
 	<Description>Encryption classes</Description>
 	<Copyright>Nanuit(c) 2022</Copyright>
 	<PackageIcon>nuget.png</PackageIcon>
-	<PackageReleaseNotes>Added .net5.0 and .net6.0 support</PackageReleaseNotes>	
+	<PackageReleaseNotes>Added .net5.0 and .net6.0 support</PackageReleaseNotes>
+	  <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
