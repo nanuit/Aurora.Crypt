@@ -5,7 +5,7 @@
     <AssemblyName>Aurora.Crypt</AssemblyName>
     <RootNamespace>Aurora.Crypt</RootNamespace>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-	<VersionPrefix>1.0.2</VersionPrefix>
+	<VersionPrefix>1.0.3</VersionPrefix>
 	<PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
 	<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
 	<ImplicitUsings>disable</ImplicitUsings>
@@ -13,7 +13,7 @@
 	<Description>Encryption classes</Description>
 	<Copyright>Nanuit(c) 2022</Copyright>
 	<PackageIcon>nuget.png</PackageIcon>
-	<PackageReleaseNotes>Added .net5.0 and .net6.0 support</PackageReleaseNotes>
+	<PackageReleaseNotes>Encryption reworked</PackageReleaseNotes>
 	  <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 
@@ -26,10 +26,10 @@
   </PropertyGroup>
 
 	<ItemGroup Condition="'$(TargetFramework)' != 'net48'">
-		<Compile Remove="AesCrypt.cs" />
+		<Codefile Remove="RjindaelCrypt.cs" />
 	</ItemGroup>
 	<ItemGroup Condition="'$(TargetFramework)' == 'net48'">
-		<Compile Remove="RjindaelCrypt.cs" />
+		<Codefile Include="RjindaelCrypt.cs" />
 	</ItemGroup>
 	<ItemGroup>
     <None Include="..\Common\nuget.png">
