@@ -25,7 +25,13 @@
     <WarningLevel>5</WarningLevel>
   </PropertyGroup>
 
-  <ItemGroup>
+	<ItemGroup Condition="'$(TargetFramework)' != 'net48'">
+		<Compile Remove="AesCrypt.cs" />
+	</ItemGroup>
+	<ItemGroup Condition="'$(TargetFramework)' == 'net48'">
+		<Compile Remove="RjindaelCrypt.cs" />
+	</ItemGroup>
+	<ItemGroup>
     <None Include="..\Common\nuget.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
