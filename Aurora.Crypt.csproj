@@ -1,19 +1,19 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net48;net5.0;net6.0</TargetFrameworks>    
+    <TargetFrameworks>net48;net5.0;net6.0;net7.0</TargetFrameworks>
     <AssemblyName>Aurora.Crypt</AssemblyName>
     <RootNamespace>Aurora.Crypt</RootNamespace>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-	<VersionPrefix>1.0.4</VersionPrefix>
+	<VersionPrefix>1.0.5</VersionPrefix>
 	<PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
-	<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+	<PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
 	<ImplicitUsings>disable</ImplicitUsings>
 	<Authors>Nanuit</Authors>
 	<Description>Encryption classes</Description>
 	<Copyright>Nanuit(c) 2022</Copyright>
 	<PackageIcon>nuget.png</PackageIcon>
-	<PackageReleaseNotes>Encryption reworked</PackageReleaseNotes>
+	<PackageReleaseNotes>added net7.0 support</PackageReleaseNotes>
 	  <GenerateDocumentationFile>true</GenerateDocumentationFile>
 	  <Nullable>enable</Nullable>
 	  <LangVersion>8.0</LangVersion>
