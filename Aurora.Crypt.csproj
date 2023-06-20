@@ -34,7 +34,7 @@
 		<Codefile Include="RjindaelCrypt.cs" />
 	</ItemGroup>
 	<ItemGroup>
-    <None Include="..\Common\nuget.png">
+    <None Include="nuget.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
