@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net48;net6.0;net7.0</TargetFrameworks>
+    <TargetFrameworks>net6.0;net7.0;net48;net8.0</TargetFrameworks>
     <AssemblyName>Aurora.Crypt</AssemblyName>
     <RootNamespace>Aurora.Crypt</RootNamespace>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
@@ -16,9 +16,13 @@
 	<PackageReleaseNotes>added net7.0 support</PackageReleaseNotes>
 	  <GenerateDocumentationFile>true</GenerateDocumentationFile>
 	  <Nullable>enable</Nullable>
-	  <LangVersion>8.0</LangVersion>
+	  <LangVersion>latestmajor</LangVersion>
   </PropertyGroup>
-
+	<PropertyGroup>
+		<PublishWithAspNetCoreTargetManifest>false</PublishWithAspNetCoreTargetManifest>
+		<DebugType>None</DebugType>
+		<GenerateDocumentationFile>false</GenerateDocumentationFile>
+	</PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <WarningLevel>5</WarningLevel>
   </PropertyGroup>
