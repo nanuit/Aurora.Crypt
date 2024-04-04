@@ -19,8 +19,7 @@
 	  <LangVersion>latestmajor</LangVersion>
   </PropertyGroup>
 	<PropertyGroup>
-		<PublishWithAspNetCoreTargetManifest>false</PublishWithAspNetCoreTargetManifest>
-		<DebugType>None</DebugType>
+		<PublishWithAspNetCoreTargetManifest>false</PublishWithAspNetCoreTargetManifest>		
 		<GenerateDocumentationFile>false</GenerateDocumentationFile>
 	</PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
